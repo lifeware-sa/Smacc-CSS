@@ -50,18 +50,6 @@ ASTAttributeNode >> equalToken: aSmaCCToken [
 ]
 
 { #category : #generated }
-ASTAttributeNode >> iNCLUDESToken [
-
-	^ iNCLUDESToken
-]
-
-{ #category : #generated }
-ASTAttributeNode >> iNCLUDESToken: aSmaCCToken [
-
-	iNCLUDESToken := aSmaCCToken
-]
-
-{ #category : #generated }
 ASTAttributeNode >> identTokens [
 
 	^ identTokens
@@ -71,6 +59,18 @@ ASTAttributeNode >> identTokens [
 ASTAttributeNode >> identTokens: anOrderedCollection [
 
 	identTokens := anOrderedCollection
+]
+
+{ #category : #generated }
+ASTAttributeNode >> iNCLUDESToken [
+
+	^ iNCLUDESToken
+]
+
+{ #category : #generated }
+ASTAttributeNode >> iNCLUDESToken: aSmaCCToken [
+
+	iNCLUDESToken := aSmaCCToken
 ]
 
 { #category : #'generated-initialize-release' }

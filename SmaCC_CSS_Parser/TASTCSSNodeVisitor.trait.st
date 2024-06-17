@@ -24,15 +24,15 @@ TASTCSSNodeVisitor >> visitAttribute: anAttribute [
 ]
 
 { #category : #generated }
-TASTCSSNodeVisitor >> visitCSS: aCSS [
-
-	^ self visitSmaCCParseNode: aCSS
-]
-
-{ #category : #generated }
 TASTCSSNodeVisitor >> visitClass: aClass [
 
 	^ self visitCSS: aClass
+]
+
+{ #category : #generated }
+TASTCSSNodeVisitor >> visitCSS: aCSS [
+
+	^ self visitSmaCCParseNode: aCSS
 ]
 
 { #category : #generated }

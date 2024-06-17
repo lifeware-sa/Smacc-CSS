@@ -105,13 +105,38 @@ CSSScannerTest >> testFontFace [
 ]
 
 { #category : #tests }
-CSSScannerTest >> testKeyFrames2 [
+CSSScannerTest >> testImportant [
+	CSSParser
+		parse: '.round-button {
+    display: inline-block;
+    width:48px;
+    height:48px;
+    line-height:48px;
+    border-radius: 50%;
+    color:#fff ! important;
+    text-align:center;
+    text-decoration:none;
+    background: #4579bc;
+    font-size:20px;
+    font-weight:bold;
+}'
+]
 
-	CSSParser parse: '@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+{ #category : #tests }
+CSSScannerTest >> testImportantWithoutSpace [
+	CSSParser
+		parse: '.round-button {
+    display: inline-block;
+    width:48px;
+    height:48px;
+    line-height:48px;
+    border-radius: 50%;
+    color:#fff !important;
+    text-align:center;
+    text-decoration:none;
+    background: #4579bc;
+    font-size:20px;
+    font-weight:bold;
 }'
 ]
 
@@ -137,6 +162,17 @@ CSSScannerTest >> testKeyframes [
   -webkit-transform:rotate(359deg);
   transform:rotate(359deg)
  }
+}'
+]
+
+{ #category : #tests }
+CSSScannerTest >> testKeyFrames2 [
+
+	CSSParser parse: '@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }'
 ]
 

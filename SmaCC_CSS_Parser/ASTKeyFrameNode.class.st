@@ -30,18 +30,6 @@ ASTKeyFrameNode >> initialize [
 ]
 
 { #category : #generated }
-ASTKeyFrameNode >> kEYFRAMES_SYMToken [
-
-	^ kEYFRAMES_SYMToken
-]
-
-{ #category : #generated }
-ASTKeyFrameNode >> kEYFRAMES_SYMToken: aSmaCCToken [
-
-	kEYFRAMES_SYMToken := aSmaCCToken
-]
-
-{ #category : #generated }
 ASTKeyFrameNode >> keyframeBlocks [
 
 	^ keyframeBlocks
@@ -53,6 +41,18 @@ ASTKeyFrameNode >> keyframeBlocks: anOrderedCollection [
 	self setParents: self keyframeBlocks to: nil.
 	keyframeBlocks := anOrderedCollection.
 	self setParents: self keyframeBlocks to: self
+]
+
+{ #category : #generated }
+ASTKeyFrameNode >> kEYFRAMES_SYMToken [
+
+	^ kEYFRAMES_SYMToken
+]
+
+{ #category : #generated }
+ASTKeyFrameNode >> kEYFRAMES_SYMToken: aSmaCCToken [
+
+	kEYFRAMES_SYMToken := aSmaCCToken
 ]
 
 { #category : #generated }
